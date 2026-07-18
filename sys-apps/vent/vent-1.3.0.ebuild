@@ -1,15 +1,15 @@
 EAPI=8
 
-inherit cmake git-r3
+inherit cmake
 
 DESCRIPTION="A fast, simple dependency installer for repositories"
 HOMEPAGE="https://github.com/grafmorkov/vent"
 
-EGIT_REPO_URI="https://github.com/grafmorkov/vent.git"
+SRC_URI="https://github.com/grafmorkov/vent/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 
 BDEPEND="
 	dev-build/cmake
